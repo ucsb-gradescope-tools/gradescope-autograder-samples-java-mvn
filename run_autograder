@@ -7,4 +7,5 @@ cd /autograder/git-repo/gradescope-autograder-samples-java-mvn/
 cp /autograder/submission/IntList.java src/main/java/com/gradescope/intlist
 
 mvn -q compile
+mvn -q test
 mvn -q exec:java > /autograder/results/results.json
