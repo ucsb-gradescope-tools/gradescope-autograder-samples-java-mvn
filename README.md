@@ -1,3 +1,24 @@
+
+
+# Gradescope Java+Maven Autograder Example
+
+This repo was adapted in the following way:
+
+* The java-mvn subdirectory of Gradescope's examples were used as a starting point
+
+* Then, since the src subdir of that repo is only a symlink, the actual files were copied in
+* Then, since the original did not follow the usual mvn convention of separating regular and test code,
+   the test code was moved from `src/main/java` to `src/test/java`
+* Then, the `pom.xml` file was modified so that it would match the actual package name
+   of the `RunTests` class (which was incorrect in the original)
+* The `pom.xml` file was also modified to use the `test` classpath
+* The `run_autograder` script was modified to pull from a repo using the technique in [link-gs-zip-with-repo] and to copy the student submission into that directory.
+
+
+
+# BELOW THIS LINE, ORIGINAL README.md CONTENTS
+
+
 # Gradescope Java+Maven Autograder Example
 
 This example shows how to set up an autograder on Gradescope for a
